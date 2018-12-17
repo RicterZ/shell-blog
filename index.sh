@@ -1,17 +1,7 @@
 #!/bin/bash
-echo "Content-type: text/plain"
-echo ""
-echo "root@you ~:# ssh ricterz.me"
-echo ""
-
-if [[ $HTTP_USER_AGENT == *"curl"* ]]; then
-    screenfetch
-else
-    screenfetch -N
-fi
-
-echo ""
-echo "Welcome to Ricter's Diary Server."
+./header.sh
+echo "Welcome to Ricter's Diary Server. [ 🦈 ]"
+echo "Source code: <a target=_blank href="https://github.com/RicterZ/shell-blog">https://github.com/RicterZ/shell-blog</a>"
 echo ""
 
 # find me
@@ -19,21 +9,16 @@ echo "\$ cat find_me"
 cat find_me
 echo ""
 
-echo "\$ id"
-id
+echo "\$ cat VULNERABILITY_REPORTING_POLICY.txt"
+cat VULNERABILITY_REPORTING_POLICY.txt
 echo ""
 
-# list posts
-echo "\$ ls -1r posts/"
+echo "\$ id | fold -w 103"
+id | fold -w 103
+echo ""
+
+echo "\$ ls -1r <a href='/posts/'>posts/</a>"
 ls -1r posts/
 echo ""
 
-# list posts
-echo "\$ ls -1r diaries/"
-ls -1r diaries/
-echo ""
-
-
-echo "\$ exit"
-echo "Connection to ricterz.me closed."
-echo "root@you ~:#"
+./footer.sh
