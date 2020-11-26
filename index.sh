@@ -9,17 +9,16 @@ echo "\$ cat find_me"
 cat find_me
 echo ""
 
-echo "\$ id"
-id
+echo "\$ id | fold -w 103"
+id | fold -w 103
 echo ""
 
-# list posts
 echo "\$ ls -1r <a href='/posts/'>posts/</a>"
 ls -1r posts/
 echo ""
 
-# list posts
 echo "\$ ls -1r <a href='/diaries'>diaries/</a>"
 ls -1r diaries/
+echo ""
 
 ./footer.sh
