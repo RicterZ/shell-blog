@@ -9,7 +9,7 @@ echo "\$ cat find_me"
 cat find_me
 echo ""
 
-echo "\$ cat VULNERABILITY_REPORTING_POLICY.txt"
+echo "\$ cat ../../../../../../../../../VULNERABILITY_REPORTING_POLICY.txt"
 cat VULNERABILITY_REPORTING_POLICY.txt
 echo ""
 
